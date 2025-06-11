@@ -2,7 +2,7 @@
 
 [🔗 Acesse o site aqui](https://shimmering-muffin-4cbcd4.netlify.app)
 
-Este é o site oficial da igreja (substitua pelo nome da igreja) desenvolvido utilizando tecnologias web modernas: **HTML**, **CSS** e **JavaScript**. O projeto foi criado com o objetivo de fortalecer a presença online da igreja, disponibilizando informações, eventos, mensagens e formas de contato com a comunidade.
+Este é o site oficial da igreja Comunidade Bom Pastor desenvolvido utilizando tecnologias web modernas: **HTML**, **CSS** e **JavaScript**. O projeto foi criado com o objetivo de fortalecer a presença online da igreja, disponibilizando informações, eventos, mensagens e formas de contato com a comunidade.
 
 ## 📌 Funcionalidades
 
