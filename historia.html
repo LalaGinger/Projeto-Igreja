@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>História - Comunidade Bom Pastor</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Fundo com imagem e overlay */
+    body.pagina-historia {
+      margin: 0;
+      padding-top: 120px; /* espaço para topo fixo */
+      padding-bottom: 80px; /* espaço para rodapé fixo */
+      background: url('img/historia.jpg') no-repeat center center fixed;
+      background-size: cover;
+      position: relative;
+      min-height: 100vh;
+      color: #000;
+      font-family: "Segoe UI", sans-serif;
+    }
+
+    body.pagina-historia::before {
+      content: "";
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(255, 255, 255, 0.75);
+      z-index: 0;
+      pointer-events: none;
+    }
+
+    /* Conteúdo centralizado com fundo branco semi-transparente */
+    main {
+      position: relative;
+      z-index: 1;
+      max-width: 700px;
+      margin: 0 auto 40px;
+      background: rgba(255, 255, 255, 0.9);
+      padding: 25px 30px;
+      border-radius: 8px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.2);
+      text-align: justify;
+      line-height: 1.5;
+    }
+
+    main h1 {
+      color: #001f4d;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    /* Topo fixo */
+    .top-bar {
+      background-color: #001f4d;
+      color: white;
+      padding: 10px 0;
+      text-align: center;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+      font-weight: bold;
+    }
+
+    /* Menu fixo logo e links */
+    nav.navbar {
+      background-color: #001f4d;
+      position: fixed;
+      top: 40px; /* abaixo do top-bar */
+      left: 0;
+      width: 100%;
+      padding: 5px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 1000;
+      border-bottom: 2px solid #ccc;
+    }
+
+    .logo img {
+      height: 50px;
+      margin-left: 10px;
+      display: block;
+    }
+
+    ul.menu {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      margin-right: 10px;
+      padding-left: 0;
+    }
+
+    ul.menu li a {
+      color: #d4af37;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    ul.menu li a:hover {
+      color: #ffd700;
+    }
+
+    ul.menu li a.active {
+      color: white;
+      text-shadow: 0 0 8px #d4af37;
+    }
+
+    /* Menu responsivo */
+    .menu-toggle {
+      display: none;
+      font-size: 28px;
+      cursor: pointer;
+      color: #d4af37;
+      margin-right: 10px;
+    }
+
+    @media (max-width: 768px) {
+      ul.menu {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        background-color: #f0f0f0;
+        padding: 10px;
+        position: absolute;
+        top: 100%;
+        right: 10px;
+        border-radius: 5px;
+      }
+      ul.menu.active {
+        display: flex;
+      }
+      .menu-toggle {
+        display: block;
+      }
+    }
+
+    /* Rodapé fixo */
+    footer {
+      background-color: #001f4d;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+    }
+  </style>
+</head>
+<body class="pagina-historia">
+
+  <!-- Topo fixo -->
+  <div class="top-bar">
+    Comunidade Católica Bom Pastor
+  </div>
+
+  <!-- Menu fixo -->
+  <nav class="navbar">
+    <div class="logo">
+      <a href="index.html"><img src="img/logo.jpg" alt="Logo Comunidade Bom Pastor" /></a>
+    </div>
+    <div class="menu-toggle" id="menu-toggle">☰</div>
+    <ul class="menu" id="menu">
+      <li><a href="index.html">Início</a></li>
+      <li><a href="historia.html" class="active">História</a></li>
+      <li><a href="tiasarteiras.html">Tias Arteiras</a></li>
+      <li><a href="inscricao.html">Inscrição Catequese</a></li>
+      <li><a href="contato.html">Contato</a></li>
+    </ul>
+  </nav>
+
+  <!-- Conteúdo principal -->
+  <main>
+    <h1>História da Comunidade Bom Pastor</h1>
+    <p>No ano de 1985 a moradora Wanda Maiolino tomou a iniciativa de cimentos, sendo que o conjunto habitacional Morada do Ouro foi inaugurada para atender e reunir em sua residência um pequeno grupo para celebrar a palavra de Deus com louvores e agradecimentos a funcionários públicos.</p>
+    <p>Com adesão de novos moradores, a necessidade de um espaço maior fez com que procurassem o saguão dos blocos residenciais, iniciando pelo setor centro norte, depois no setor centro sul.</p>
+    <p>A Escola Estadual Djalma Ferreira de Souza, conhecedora das necessidades deste pequeno grupo, disponibilizou parte do espaço, onde as celebrações passaram a acontecer todos os domingos com a presença do sacerdote. A cada dia crescia no grupo o anseio de se ter um espaço próprio onde se pudesse reunir o povo e celebrar.</p>
+    <p>Com o apoio dos padres da Paróquia do Divino Espírito Santo, a comunidade foi se mobilizando para a aquisição do terreno e posterior construção da Igreja. Após o lançamento da pedra fundamental, a comunidade foi se conscientizando da importância na contribuição com dízimo e na participação das promoções cujo objetivo era angariar recursos.</p>
+    <p>Durante a construção, apareceram muitas dificuldades, tais como: recursos financeiros mínimos; falta de conhecimento técnico; acompanhamento profissional de voluntários, entre outras, mas que foram superadas, graças ao desejo de se ver alcançado o objetivo.</p>
+    <p>A comunidade sempre foi muito receptiva, e ao término desta etapa foi escolhido, em assembleia, o nome para a comunidade de Bom Pastor. Buscando fundamentos no capítulo 10 do evangelista João onde diz que o “bom pastor é aquele que dá a sua própria vida para o seu rebanho.” Com a presença de Dom Bonifácio Piccinini celebramos a missa de inauguração.</p>
+    <p>Nesta comunidade ainda teve episódio muito significativo. Sua santidade o papa João Paulo II, em 16/10/1991, passando pela Morada do Ouro, abençoou este templo com o sinal da cruz.</p>
+    <p>Na medida em que crescia a comunidade, as necessidades foram aumentando, e com a implantação das pastorais, dos grupos e movimentos e principalmente nas celebrações dos sacramentos, o espaço atual foi ficando pequeno.</p>
+    <p>Assim, cogitou-se uma ampliação e reforma, principalmente da fachada do prédio. Após exaustivos debates, o consenso foi de que seria melhor construir uma nova igreja. Inicia-se assim, uma nova etapa: a mobilização da comunidade para a construção do novo Templo para a comunidade Bom Pastor.</p>
+    <p>A inovação sempre provoca reação no povo. Temos consciência que este desafio da construção material provocará também um crescimento espiritual: maior envolvimento, mais partilha dos bens e dos dons como nos fala o retrato da primeira comunidade dos Atos dos Apóstolos capítulo 4,12 “ninguém considerava propriedade particular as coisas que possuía, mas tudo era posto em comum entre eles”.</p>
+    <p>Assim nasceu a Comunidade Católica Bom Pastor, reunindo até hoje muitos fiéis que desejam encontrar um lugar acolhedor, de alegrias, de amizades, de dedicação, de amor. Uma igreja que acolhe a todos.</p>
+  </main>
+
+  <footer>
+    &copy; 2025 Comunidade Bom Pastor. Todos os direitos reservados.
+  </footer>
+
+  <script>
+    // Menu toggle para mobile
+    const toggle = document.getElementById('menu-toggle');
+    const menu = document.getElementById('menu');
+    toggle.addEventListener('click', () => {
+      menu.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
